@@ -1,0 +1,389 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.row{
+    width:100%;
+}
+
+li{
+    cursor:pointer;
+    list-style:none;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+
+.box{
+    margin:0em 0.5em;
+    padding:0.6em;
+    flex:1;
+    /* flex-direction:column; */
+}
+
+
+.container{
+    width:92%;
+    padding:0em 0.4em;
+    margin:auto auto;
+    display:flex;
+
+    /* min-height: 800px; */
+
+}
+
+.no-flex-container{
+    width:92%;
+    padding:0em 0.4em;
+    margin:auto auto;
+
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color:#ffffff;
+}
+
+#bold{
+    height:1px;
+    background-color: rgb(155, 154, 154);
+}
+
+.clr{
+    clear:both;
+}
+
+.text-primary{
+    color:rgb(243, 55, 49);
+    font-weight:200;
+    /* line-height:1.2; */
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+}
+
+
+
+/* Regular */
+
+.icons{
+    height:19px;
+    width:21px;
+    margin:0px 10px;
+    filter:brightness(0) invert(1);
+    /* filter: invert(1); */
+}
+
+.icons:hover{
+    filter:brightness(1);
+}
+
+#nav-logo .box-2 ul li a{
+    border-bottom:1px;
+}
+
+#nav-logo .box-2 ul li:hover a{
+        border-bottom:2px solid white;
+        padding-bottom:8px;
+}
+
+body{
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    line-height:1.2em;
+    color:white;
+    /* background-color: rgb(243, 243, 243); */
+}
+
+#index-top .box1{
+    display:inline;
+    width:100px;
+}
+
+#index.top .box{
+    display:inline-block;
+}
+
+#index-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.box-2{
+    text-align:right;
+}
+
+
+
+/* LOGO AND NAVBAR SECTION */
+
+#nav-logo {  align-items:flex-start; flex-flow: wrap; }
+#nav-logo .box {  flex-basis:40px; font-weight:700; }
+
+#nav-logo .box-1 {  flex:1;  }
+#nav-logo .box-2 {  flex:2;  }
+
+#nav-logo .box-1 img { width:50px; }
+
+#nav-logo .box-2 ul   {  display:flex;  }
+#nav-logo .box-2 ul li{ 
+     flex:1;
+     text-align:center;
+     padding:0.6em;
+     margin:0.2em;
+}
+
+
+
+/* Birds Watching Main */
+
+#bird-main h1{ 
+    display:block;
+    text-align:center;
+    margin-top:80px;   
+}
+
+#bird-main p{
+    line-height:1.8;
+    letter-spacing: 1;
+    width:70%;
+    margin:0px auto;
+}
+    
+  #bird-bg{
+      background:url('../images/couple-bird.png') no-repeat center center;
+  }
+
+/* Blur it */
+  .blur-img{
+    width:300px;
+    height:200px;
+    display:inline-block;
+    position:relative;
+    transition:.3s;
+    margin:4px;
+  }
+  
+  .blur-img img{
+    width:100%;
+    height:100%;
+    transition:.3s;
+    border-radius:4px;
+  }
+  
+  .blur-img:hover img{
+    filter:blur(2px) brightness(59%);
+    box-shadow:0 0 16px rgb(94, 92, 92);
+  }
+   
+  .blur-img :not(img){
+    position:absolute;
+    z-index:1;    
+    width:100%;
+    text-align:center;
+    top:50%;
+    color:#fff;
+    opacity:0;
+    transition:.3s;
+    font-weight: 700;
+  }
+  
+   .blur-img p{
+    top:70%
+  } 
+  
+   .blur-img:hover :not(img){
+    opacity:1;
+  } 
+
+
+
+
+
+
+  /* Footer */
+
+  #footer label{
+    font-size:24px;
+}
+
+#footer input{
+    display:inline-block;
+    position:relative;
+    top:-3px;
+    padding:7px;
+    padding-left:20px;
+    border-radius: 15px;
+    width:350px;
+    border:none;
+}
+
+#footer button{
+    display:inline-block;
+    position:relative;
+    /* background-color: rgb(50, 110, 90); */
+    top:-3px;
+
+    padding:5px;
+    border:none;
+    border-radius:15px;
+    font-size:16px;
+    color:#333;
+    cursor: pointer;
+}
+
+
+
+
+/* Chitwan part */
+
+#chitwan{
+    width:52%;
+    margin:30px auto;
+    color:black;
+}
+
+#chitwan .text-primary{
+    font-size:35px;
+    margin:20px;
+    margin-left:0px;
+}
+
+#chitwan p{
+    padding:20px 0px;
+    color:rgb(68, 68, 68);
+    line-height:1.5;
+}
+
+
+/* Mountain part */
+
+#mountain{
+    width:70%;
+    margin:30px auto;
+    color:black;
+}
+
+#mountain .text-primary{
+    font-size:35px;
+    margin:20px;
+    margin-left:0px;
+}
+
+#mountain p{
+    padding:20px 0px;
+    color:rgb(68, 68, 68);
+    line-height:1.5;
+}
+
+
+/* Pashupati */
+
+#pashupati{
+    width:70%;
+    margin:30px auto;
+    color:black;
+}
+
+#pashupati .text-primary{
+    font-size:35px;
+    margin:20px;
+    margin-left:0px;
+}
+
+#pashupati p{
+    padding:20px 0px;
+    color:rgb(68, 68, 68);
+    line-height:1.5;
+}
+
+
+
+/* #Nepal-Now */
+
+.nepal-now{
+    text-align:center;
+    padding:10px auto;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    color:black;
+}
+
+.nepal-now .box{
+    flex:1;
+    overflow:hidden;
+    width:400px;
+    height:250px;
+}
+
+.nepal-now .box1{background:url('../images/nepal-now1.jpg') no-repeat center center; background-size: 100%;}
+.nepal-now .box2{background:url('../images/nepal-now2.jpg') no-repeat center center; background-size: 100%;}
+.nepal-now .box3{background:url('../images/nepal-now3.jpg') no-repeat center center; background-size: 105%;}
+
+
+.nepal-now .box4{background:url('../images/nepal-now4.jpg') no-repeat center center; background-size: 180%;}
+.nepal-now .box5{background:url('../images/nepal-now5.jpg') no-repeat center center; background-size: 120%;}
+.nepal-now .box6{background:url('../images/nepal-now6.jpg') no-repeat center center; background-size: 100%;}
+
+/* Footer */
+
+#footer label{
+    font-size:24px;
+}
+
+#footer input{
+    display:inline-block;
+    position:relative;
+    top:-3px;
+    padding:7px;
+    padding-left:20px;
+    border-radius: 15px;
+    width:350px;
+    border:none;
+}
+
+#footer button{
+    display:inline-block;
+    position:relative;
+    /* background-color: rgb(50, 110, 90); */
+    
+    padding:5px;
+    border:none;
+    top:-3px;
+    border-radius:15px;
+    font-size:16px;
+    color:#333;
+    cursor: pointer;
+}
+
+
+
+/* Footer @ footnote */
+
+#footnote{
+    font-size: 12px;
+    height:30px;
+}
+
+
+#footnote ul{
+    float:left;
+}
+#footnote li{
+    margin:0px 5px;
+    font-size:12;
+    float:left;
+}
+
+/* Time */
+
+.clock {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+

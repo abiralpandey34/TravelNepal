@@ -1,0 +1,479 @@
+
+/* Utility classes */
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.row{
+    width:100%;
+}
+
+li{
+    cursor:pointer;
+    list-style:none;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+
+.box{
+    margin:0em 0.5em;
+    padding:0.6em;
+    flex:1;
+    /* flex-direction:column; */
+}
+
+
+.container{
+    width:92%;
+    padding:0em 0.4em;
+    margin:auto auto;
+    display:flex;
+
+    /* min-height: 800px; */
+
+}
+
+.no-flex-container{
+    width:92%;
+    padding:0em 0.4em;
+    margin:auto auto;
+
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color:#ffffff;
+}
+
+#bold{
+    height:1px;
+    background-color: rgb(155, 154, 154);
+}
+
+.clr{
+    clear:both;
+}
+
+.text-primary{
+    color:rgb(243, 55, 49);
+    font-weight:200;
+}
+
+
+
+/* Regular */
+
+.icons{
+    height:19px;
+    width:21px;
+    margin:0px 10px;
+    filter:brightness(0) invert(1);
+    /* filter: invert(1); */
+}
+
+.icons:hover{
+    filter:brightness(1);
+}
+
+body{
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    line-height:1.2em;
+    color:white;
+    /* background-color: rgb(243, 243, 243); */
+}
+
+#index-background{
+    background: url('../images/img.jpg') no-repeat center center/cover;
+    height:580px;
+}
+
+#index-top{
+    font-size:0.9em;
+    padding:0px;
+    justify-content:space-between;
+}
+
+
+#index-top .box1{
+    display:inline;
+    width:100px;
+}
+
+#index.top .box{
+    display:inline-block;
+}
+
+#index-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-2{
+    text-align:right;
+}
+
+/* LOGO AND NAVBAR SECTION */
+
+#nav-logo {  align-items:flex-start; flex-flow: wrap; }
+#nav-logo .box {  flex-basis:40px; font-weight:700; }
+
+#nav-logo .box-1 {  flex:1;  }
+#nav-logo .box-2 {  flex:2;  }
+
+#nav-logo .box-1 img { width:150px; }
+
+#nav-logo .box-2 ul   {  display:flex;  }
+#nav-logo .box-2 ul li{ 
+     flex:1;
+     text-align:center;
+     padding:0.6em;
+     margin:0.2em;
+}
+#nav-logo .box-2 ul li a{
+    border-bottom:1px;
+}
+
+#nav-logo .box-2 ul li:hover a{
+        border-bottom:2px solid white;
+        padding-bottom:8px;
+}
+
+
+
+/* IMAGE HERO TEXT & SUB TEXT */
+
+#sub-text{
+    font-style: italic;
+    font-family:'PT Serif';
+    position:relative;
+    font-size:25px;
+    text-align:center;
+    
+}
+
+
+/* Start of Main-Section */
+
+#main-section{
+    display:flex;
+    color:#333;
+    margin-top:100px;
+}
+
+#main-section .box1{flex:1; text-align:center;}
+#main-section .box2{flex:2;}
+
+
+
+#main-section .box2{
+    display:flex;    
+    /* justify-content:space-between; */
+}
+
+#main-section .box2 .sub-box{
+    margin:10px;
+    flex:1;
+    width:50px;
+    height:350px;
+}
+
+#main-section .box2 .sub-box1{
+    background: url('../images/pokhara.jpg') no-repeat center center;
+    background-size:600px;
+}
+
+#main-section .box2 .sub-box1:hover{
+    filter: brightness(0.6);
+    transition: filter .3s ease-in-out;
+}
+
+#main-section .box2 .sub-box2{
+    background: url('../images/bhaktapur.jpg') no-repeat center center;
+    background-size:600px;
+}
+
+#main-section .box2 .sub-box2:hover{
+    filter: brightness(0.6);
+    transition: filter .3s ease-in-out;
+}
+
+#main-section .box2 .sub-box3{
+    background: url('../images/chitwan.jpg') no-repeat center center;
+    background-size:800px;
+    background-position-x: -200px;
+}
+
+#main-section .box2 .sub-box3:hover{
+    filter: brightness(0.6);
+    transition: filter .3s ease-in-out;
+}
+
+
+
+
+/* Main-Section ends......Section-2 starts */
+
+/* Gallery/Discover */
+
+
+#section-2 .box{
+    display:flex;
+    justify-content: space-between;
+}
+
+#section-2 .box .img{
+    width:390px;
+    height:250px;
+}
+
+#section-2 .box1{
+    flex:1;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+}
+
+
+
+
+#section-2 .img-box1{   background: url('../images/rara.jpg') no-repeat center center;  background-size: 400px;}
+#section-2 .img-box2{   background: url('../images/chitwan.jpg') no-repeat center center; background-size: 600px;}
+#section-2 .img-box3{   background: url('../images/pashupati.jpg') no-repeat center center; background-size: 500px;}
+
+#section-2 .box2 .img-box2{   background: url('../images/trekking.jpeg') no-repeat center center; margin-left:10px; background-size: 550px; }
+#section-2 .box2 .img-box1{   background: url('../images/everest.jpg') no-repeat center center; background-size: 550px;}
+
+#section-2 .box2{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+#section-2 .box2 .img{
+    width:500px;
+    height:270px;
+}
+
+/* Search By Interest */
+
+#section-3 .box{
+    display:flex;
+    justify-content: space-between;
+}
+
+#section-3 .box .img{
+    width:390px;
+    height:250px;
+}
+
+#section-3 .box1{
+    flex:1;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+}
+
+
+#section-3 .box2{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+#section-3 .box2 .img{
+    width:395px;
+    height:270px;
+}
+
+#section-3 .img-box1{   background: url('../images/rara.jpg') no-repeat center center;  background-size: 400px;}
+#section-3 .img-box2{   background: url('../images/chitwan.jpg') no-repeat center center; background-size: 600px;}
+#section-3 .img-box3{   background: url('../images/pashupati.jpg') no-repeat center center; background-size: 500px;}
+
+#section-3 .box2 .img-box2{   background: url('../images/trekking.jpeg') no-repeat center center; margin-left:10px; width:400px; background-size: 450px; }
+#section-3 .box2 .img-box1{   background: url('../images/everest.jpg') no-repeat center center; background-size: 450px; width:375px; margin-left:10px;}
+#section-3 .box2 .img-box3{   background: url('../images/everest.jpg') no-repeat center center; background-size: 450px; margin-left:10px;}
+
+
+#section-3 .box2 .img-box1:hover{
+    filter:brightness(0.5);
+    /* transform: scale(1.5); */
+    transition: filter .3s ease-in-out;
+}
+
+
+
+
+
+/* Kathmandu Section */
+
+#kathmandu{
+    color:#333;
+    
+    min-height:500px;
+    background: url('../images/foggy.png') no-repeat center center;
+    /* background-size:cover;*/
+    width:100%;
+    text-align:center;
+}
+
+#kathmandu h1{
+    display:inline-block;
+    margin:0px auto;
+    margin-top:200px;
+    
+    text-align:center;
+    font-family: 'open sans', 'Roboto', Sans Serif;
+    font-weight:200;
+}
+
+.center-text{
+    width:60%;
+    margin:0px auto;
+}
+
+.center-text p{
+    font-style: italic;
+    font-size:18px;
+    margin-top:30px;
+
+}
+
+/* Footer */
+
+#footer label{
+    font-size:24px;
+}
+
+#footer input{
+    display:inline-block;
+    position:relative;
+    top:-3px;
+    padding:7px;
+    padding-left:20px;
+    border-radius: 15px;
+    width:350px;
+    border:none;
+}
+
+#footer button{
+    display:inline-block;
+    position:relative;
+    /* background-color: rgb(50, 110, 90); */
+    
+    padding:5px;
+    border:none;
+    top:-3px;
+    border-radius:15px;
+    font-size:16px;
+    color:#333;
+    cursor: pointer;
+}
+
+
+/* #Nepal-Now */
+
+.nepal-now{
+    text-align:center;
+    padding:10px auto;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    color:black;
+}
+
+.nepal-now .box{
+    flex:1;
+    overflow:hidden;
+    width:400px;
+    height:250px;
+}
+
+.nepal-now .box1{background:url('../images/nepal-now1.jpg') no-repeat center center; background-size: 100%;}
+.nepal-now .box2{background:url('../images/nepal-now2.jpg') no-repeat center center; background-size: 100%;}
+.nepal-now .box3{background:url('../images/nepal-now3.jpg') no-repeat center center; background-size: 105%;}
+
+
+.nepal-now .box4{background:url('../images/nepal-now4.jpg') no-repeat center center; background-size: 180%;}
+.nepal-now .box5{background:url('../images/nepal-now5.jpg') no-repeat center center; background-size: 120%;}
+.nepal-now .box6{background:url('../images/nepal-now6.jpg') no-repeat center center; background-size: 100%;}
+
+
+
+
+/* making blur */
+
+
+.blur-img{
+    width:300px;
+    height:200px;
+    display:inline-block;
+    position:relative;
+    transition:.3s;
+    margin:4px;
+  }
+  
+  .blur-img img{
+    width:100%;
+    height:100%;
+    transition:.3s;
+    border-radius:4px;
+  }
+  
+  .blur-img:hover img{
+    filter:blur(2px) brightness(59%);
+    box-shadow:0 0 16px rgb(94, 92, 92);
+  }
+   
+  .blur-img :not(img){
+    position:absolute;
+    z-index:1;    
+    width:100%;
+    text-align:center;
+    top:50%;
+    color:#fff;
+    opacity:0;
+    transition:.3s;
+    font-weight: 700;
+  }
+  
+   .blur-img p{
+    top:70%
+  } 
+  
+   .blur-img:hover :not(img){
+    opacity:1;
+  } 
+
+
+
+
+
+  /* TIME */
+
+  .clock {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  /* Footnote */
+#footnote{
+    font-size: 12px;
+    height:30px;
+}
+
+
+#footnote ul{
+    float:left;
+}
+#footnote li{
+    margin:0px 5px;
+    font-size:8;
+    float:left;
+}
+
